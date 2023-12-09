@@ -1,0 +1,276 @@
+/* Apply some basic styles to the container */
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #0000FF;
+}
+
+/* Style the page header */
+.page-header {
+    background-color: #0000FF;
+    font-family: Roboto;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the form labels */
+.form-group label {
+    font-weight: bold;
+}
+
+/* Style the form inputs */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the submit button */
+.btn-primary {
+    background-color: #ff6a00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+    /* Style the submit button on hover */
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+body {
+    background: #0000FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo11 {
+    background-repeat: no-repeat;
+    border-radius: 229px;
+    border: 1px solid #000000;
+    width: 229px;
+    height: 229px;
+}
+
+.C_Logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    height: 5px;
+    mix-blend-mode: screen;
+    position: relative;
+}
+
+.prime {
+    width: 70px;
+    height: 70px;
+}
+
+
+
+.title-container {
+    float: left;
+    color: #fff;
+    font-style: italic;
+    font-size: 20px;
+    width: 42%;
+    height: 2px;
+}
+
+h1 {
+    font-family: 'Lexend Mega';
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+.asset-container {
+    color: #fff;
+    font-size: 100px;
+    font-style: normal;
+    width: auto;
+    height: 170px
+}
+
+h2 {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.welcome-container {
+    color: #fff;
+    font-size: 32px;
+    font-style: normal;
+    font-family: 'Lexend Mega';
+    font-weight: 400;
+    line-height: 24px;
+    width: auto;
+    height: 100px;
+    margin-top: 15px;
+}
+
+h3 {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+
+input {
+    display: block;
+    border: 2px solid #ccc;
+    font-size: 15px;
+    width: 100%;
+    padding: 20px;
+    margin: 17px auto;
+    margin-block: 17px;
+    border-radius: 10px;
+}
+
+
+/* ---------- SCROLLBARS ---------- */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #a5aaad;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 10px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #a5aaad;
+    }
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.login-button {
+    background-color: #ff6a00;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .login-button:hover {
+        background-color: #0056b3;
+    }
+
+.forgot-button {
+    background-color: #0000FF;
+    font-family: Roboto;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: underline;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error {
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 40%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+
+
+
+a {
+    float: right;
+    background: none;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-block-end: 20px;
+    border: none;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+    a:hover {
+        opacity: .7;
+    }
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 50%; /* Adjust width for smaller screens */
+        padding-top: 80%; /* Maintain aspect ratio */
+    }
+
+    .prime {
+        width: 20%; /* Adjust width for smaller screens */
+        padding-top: 20%; /* Maintain aspect ratio */
+    }
+
+    .title-container {
+        width: 100%; /* Change width to 100% for smaller screens */
+    }
+
+    .asset-container, .welcome-container {
+        font-size: 3vw; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .C_Logo-container {
+        width: 100%; /* Adjust the width for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+    .C_Logo-container {
+        width: 100%; /* Adjust the width for even smaller screens */
+    }
+}
+

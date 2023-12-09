@@ -1,0 +1,62 @@
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    overflow: auto;
+}
+
+.modal-dialog {
+    margin: 5% auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.modal-content {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1;
+}
+
+.modal-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control, .select-control {
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+}
+
+/* Close Button */
+.close {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Close Button Hover Effect */
+.close:hover {
+    color: #f00;
+}
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}

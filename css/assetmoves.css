@@ -1,0 +1,207 @@
+/* Style the down arrow */
+.sidebar .arrow {
+    position: fixed;
+}
+
+
+/* Rotate the down arrow when the submenu is displayed */
+.sidebar li:hover .arrow::before {
+    transform: rotate(180deg);
+    visibility: hidden;
+}
+
+/* Style the submenu */
+/* Style the down arrow */
+.sidebar .arrow {
+    position: relative;
+}
+
+    .sidebar .arrow::before {
+        display: inline-block;
+        margin-right: 10px;
+        transition: transform 0.5s; /* Add a transition for smooth rotation */
+    }
+
+
+
+/* Style the submenu */
+.sidebar .submenu {
+    padding: 5px 5px 10px 50px;
+    margin-top: -10px;
+    display: none;
+}
+
+    /* Style the submenu list items */
+    .sidebar .submenu li {
+        display: block;
+    }
+
+    /* Style the submenu links */
+    .sidebar .submenu a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+    }
+
+/* Show the submenu on hover */
+.sidebar li:hover .submenu {
+    display: block;
+}
+
+/* Style the active menu item */
+.sidebar li.active a {
+    font-weight: bold;
+}
+
+/* Style the active submenu items if needed */
+.sidebar .submenu li.active a {
+    font-weight: normal;
+}
+
+
+/* Style the submenu list items */
+.sidebar .submenu li {
+    padding: 5px;
+    text-align: left;
+}
+
+/* Style the submenu links */
+.sidebar .submenu a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* Reset some default styles */
+body, h1, h2, p, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the table */
+.asset-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f0f0f0; /* Light background color for header cells */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    /* Style the table header */
+    .asset-table th {
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+     
+    }
+
+    /* Style the table rows */
+    .asset-table td {
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+    }
+
+  
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 70%;
+    left: 15%;
+    margin-top:30px;
+   
+
+}
+    .card:nth-child(2) {
+        border-left: 7px solid #246dec;
+    }
+
+.card-header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.row {
+    margin: 0;
+}
+
+.col-lg-10, .col-md-10, .col-sm-8, .col-xs-6 {
+    padding: 5px;
+}
+
+.col-lg-2, .col-md-2, .col-sm-4, .col-xs-6 {
+    text-align: right;
+    padding: 5px;
+    margin: 0;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center; /* Centering the text */
+}
+
+
+.header-left {
+    grid-area: main;
+    overflow-y: auto;
+    padding-top: 15px;
+  
+}
+
+.main-title {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+    .main-title > p {
+        font-size: 20px;
+       
+    }
+/* View Button */
+.view-btn {
+    background-color: #3566b2;
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    margin-right: 5px; /* Add space between the buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+}
+
+    .view-btn:hover {
+        background-color: #2a5178; /* Darken the color on hover */
+    }
+/* Delete Button */
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+}
+
+    .delete-btn:hover {
+        background-color: #a41d1d; /* Darken the color on hover */
+    }

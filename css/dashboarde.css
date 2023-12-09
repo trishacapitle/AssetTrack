@@ -1,0 +1,178 @@
+
+
+
+#dataid {
+    visibility: hidden;
+    display: block;
+    margin: auto 0;
+    position: absolute;
+}
+#datatableid {
+    visibility: hidden;
+}
+#reports-table {
+    visibility: hidden;
+}
+#tasktable {
+    visibility: hidden;
+}
+
+
+
+/* MDC Data Table Styles (Assuming this is an external library) */
+#datatableid .mdc-data-table__cell {
+    padding: 15px 30px 15px 15px;
+}
+
+#datatableid .mdc-data-table__header-row {
+    background-color: #a19f9f;
+}
+.data {
+    width: 50%; /* Adjust the width as needed */
+    height: 50%; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the chart horizontally within its container */
+    display: block; /* Ensure it is displayed as a block element */
+
+}
+.chart-container {
+    max-width: 30%;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    max-height: 60%;
+   
+}
+
+.charts-container {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    max-height: 100%;
+   
+}
+#dataid {
+    visibility: hidden;
+    display: block;
+    margin: auto 0;
+    position: absolute;
+}
+#datatableid {
+    visibility: hidden;
+}
+#reports-table {
+    visibility: hidden;
+}
+#task-table {
+    visibility: hidden;
+}
+
+
+
+/* MDC Data Table Styles (Assuming this is an external library) */
+#datatableid .mdc-data-table__cell {
+    padding: 15px 30px 15px 15px;
+}
+
+#datatableid .mdc-data-table__header-row {
+    background-color: #a19f9f;
+}
+.data {
+    width: 50%; /* Adjust the width as needed */
+    height: 50%; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the chart horizontally within its container */
+    display: block; /* Ensure it is displayed as a block element */
+}
+.chart-container {
+    max-width: 30%;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 15px 30px;
+    max-height: 60%;
+}
+
+
+.chartsa-container {
+    max-width: 45%;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    max-height: 60%;
+   
+}
+
+.title-container {
+    grid-area: main;
+    overflow-y: auto;
+    padding-top: 15px;
+
+}
+
+.main-title {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+    .main-title > p {
+        font-size: 20px;
+    }
+
+
+
+
+/* Style the submenu */
+.sidebar .submenu {
+    padding: 5px 5px 10px 50px;
+    margin-top: -10px;
+    display: none;
+}
+
+    /* Style the submenu list items */
+    .sidebar .submenu li {
+        display: block;
+    }
+
+    /* Style the submenu links */
+    .sidebar .submenu a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+    }
+
+/* Show the submenu on hover */
+.sidebar li:hover .submenu {
+    display: block;
+}
+
+/* Style the active menu item */
+.sidebar li.active a {
+    font-weight: bold;
+}
+
+/* Style the active submenu items if needed */
+.sidebar .submenu li.active a {
+    font-weight: normal;
+}
+
+
+/* Style the submenu list items */
+.sidebar .submenu li {
+    padding: 5px;
+    text-align: left;
+}
+
+/* Style the submenu links */
+.sidebar .submenu a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.card:nth-child(2) {
+    border-left: 7px solid #FFAE42
+}

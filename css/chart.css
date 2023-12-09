@@ -1,0 +1,43 @@
+/* Apply styling to the chart container */
+.chart-container {
+    width: 55%;
+    margin: 0 auto;
+    max-width: 60%;
+    background-color: white;
+    padding-left: 200px;
+    height: 100vh;
+    position: absolute;
+    top: 500px;
+    border-radius: 10px;
+ 
+}
+
+/* Center the chart */
+#myChart {
+    display: block;
+    margin: auto 0;
+    position: absolute;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 90px 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+        "sidebar header header header"
+        "sidebar main main main";
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

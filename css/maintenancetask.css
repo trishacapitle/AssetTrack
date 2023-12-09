@@ -1,0 +1,272 @@
+
+
+
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 96%;
+    padding: 5px 10px;
+    margin-top: 30px;
+    left: 40px;
+}
+
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+
+}
+
+.card:nth-child(2) {
+    border-left: 7px solid #246dec;
+}
+
+
+/* Row and Columns */
+.row {
+    margin: 0;
+}
+
+.col-lg-10, .col-md-10, .col-sm-8, .col-xs-6 {
+    padding: 5px;
+}
+
+.col-lg-2, .col-md-2, .col-sm-4, .col-xs-6 {
+    text-align: right;
+    padding: 5px;
+    margin: 0;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center; /* Centering the text */
+}
+
+
+
+
+#maintenanceTasksTable {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    align-items: center;
+    position: relative;
+    padding: 15px 30px 15px 15px;
+
+}
+
+    #maintenanceTasksTable th, #maintenanceTasksTable td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: left;
+        background-color: #f0f0f0; /* Light background color for header cells */
+        padding: 15px 30px 15px 15px;
+    }
+
+    #maintenanceTasksTable th {
+      color:#fff;
+    }
+
+    #maintenanceTasksTable tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+
+    }
+
+    #maintenanceTasksTable tbody tr:hover {
+        background-color: #e0e0e0;
+    }
+
+
+/* Style the down arrow */
+.sidebar .arrow {
+    position: fixed;
+  
+}
+
+
+/* Rotate the down arrow when the submenu is displayed */
+.sidebar li:hover .arrow::before {
+    transform: rotate(180deg);
+    visibility: hidden;
+}
+
+/* Style the submenu */
+/* Style the down arrow */
+.sidebar .arrow {
+    position: relative;
+}
+
+    .sidebar .arrow::before {
+        display: inline-block;
+        margin-right: 10px;
+        transition: transform 0.5s; /* Add a transition for smooth rotation */
+    }
+
+
+
+/* Style the submenu */
+.sidebar .submenu {
+    padding: 5px 5px 10px 50px;
+    margin-top: -10px;
+    display: none;
+}
+
+    /* Style the submenu list items */
+    .sidebar .submenu li {
+        display: block;
+    }
+
+    /* Style the submenu links */
+    .sidebar .submenu a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+    }
+
+/* Show the submenu on hover */
+.sidebar li:hover .submenu {
+    display: block;
+}
+
+/* Style the active menu item */
+.sidebar li.active a {
+    font-weight: bold;
+}
+
+/* Style the active submenu items if needed */
+.sidebar .submenu li.active a {
+    font-weight: normal;
+}
+
+
+/* Style the submenu list items */
+.sidebar .submenu li {
+    padding: 5px;
+    text-align: left;
+}
+
+/* Style the submenu links */
+.sidebar .submenu a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* View Button */
+.view-btn {
+    background-color: #3566b2;
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    margin-right: 5px; /* Add space between the buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+}
+
+    .view-btn:hover {
+        background-color: #2a5178; /* Darken the color on hover */
+    }
+
+/* Edit Button */
+.edit-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    margin-right: 5px; /* Add space between the buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+}
+
+    .edit-btn:hover {
+        background-color: #136e35; /* Darken the color on hover */
+    }
+
+/* Delete Button */
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+}
+
+    .delete-btn:hover {
+        background-color: #a41d1d; /* Darken the color on hover */
+    }
+
+    #print-button {
+        background-color: #007bff;
+        text-align: center;
+        left: 20px;
+        bottom: 5px;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        width: 75px;
+        height: 40px;
+        position: relative;
+    }
+    
+    #print-button:hover {
+        background-color: #0056b3;
+    }
+    
+
+/* Style for Functional cells */
+.available-cell {
+    color: green; /* Green text color for Functional */
+}
+
+/* Style for Non-Functional cells */
+.inuse-cell {
+    color: #FFAE42; /* Red text color for Non-Functional */
+}
+/* Style for Non-Functional cells */
+.maintenance-cell {
+    color: #FF0000; /* Red text color for Non-Functional */
+}
+
+.main-container {
+    grid-area: main;
+    overflow-y: auto;
+
+  padding-top: 15px;
+
+}
+
+.main-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .main-title > p {
+        font-size: 20px;
+    }
+#maintenanceTasksTable .mdc-data-table__header-cell {
+   
+    background-color: #f0f0f0; /* Light background color for header cells */
+}
+
+#maintenanceTasksTable .mdc-data-table__cell {
+ 
+    text-align: center; /* Center-align the text */
+    border: 1px solid #ccc; /* Add a border for separation */
+}
+
+#maintenanceTasksTable .mdc-data-table__header-row {
+    background-color: #3498db;
+}

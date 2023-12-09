@@ -1,0 +1,252 @@
+/* Apply some basic styles to the container */
+.container {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #0000FF;
+}
+
+/* Style the page header */
+.page-header {
+    background-color: #0000FF;
+    font-family: Roboto;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the form labels */
+.form-group label {
+    font-weight: bold;
+}
+
+/* Style the form inputs */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the submit button */
+.btn-primary {
+    background-color: #ff6a00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+    /* Style the submit button on hover */
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+/* Reset some default styles */
+body, h1, h2, h3, p, form, img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0000FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    margin-bottom:100px;
+
+}
+.logo{
+    width:229px;
+}
+
+.clogos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 2vh;
+    position: relative;
+}
+
+.prime {
+    max-width: 80%;
+    height: 150px;
+}
+
+.title-container {
+    float: left;
+    color: #fff;
+    font-style: italic;
+    font-size: 20px;
+    width: 42%;
+    height: 2px;
+}
+
+h1 {
+    font-family: 'Lexend Mega';
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.asset-container {
+    color: #fff;
+    font-size: 100px;
+    font-style: normal;
+    width: auto;
+    text-align: center;
+    margin-top: 90px;
+}
+
+h2 {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.welcome-container {
+    color: #fff;
+    font-size: 32px;
+    font-style: normal;
+    font-family: 'Lexend Mega';
+    font-weight: 400;
+    line-height: 24px;
+    width: auto;
+    height: 15vh;
+    margin: 5%; 
+}
+
+h3 {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    line-height: 24px;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input {
+    width:80%;
+    font-size: 15px;
+    padding: 15px;
+    margin: 17px auto;
+    display: block;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+/* ---------- SCROLLBARS ---------- */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #a5aaad;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a5aaad;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.login-button {
+    background-color: #ff6a00;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.forgot-button {
+    background-color: #0000FF;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: underline;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error {
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 40%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 50%;
+        padding-top: 80%;
+    }
+
+    .prime {
+        width: 20%;
+        padding-top: 20%;
+    }
+
+    .title-container {
+        width: 100%;
+    }
+
+    .asset-container,
+    .welcome-container {
+        font-size: 3vw;
+    }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .logo-container {
+        width: 100%;
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+    .logo-container {
+        width: 100%;
+    }
+}

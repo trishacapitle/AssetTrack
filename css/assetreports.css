@@ -1,0 +1,258 @@
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 90px 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+        "sidebar header header header"
+        "sidebar main main main";
+    height: 100vh;
+}
+
+
+.header {
+    grid-area: header;
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.header-right {
+    grid-area: header;
+    height: 40px;
+    display: flex;
+    position: relative;
+    right: 10px;
+}
+    .header-right a {
+        grid-area: header;
+        height: 40px;
+        display: flex;
+        position: relative;
+    }
+    
+
+/* View Button */
+.view-btn {
+    background-color: #3566b2;
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    margin-right: 5px; /* Add space between the buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+}
+
+    .view-btn:hover {
+        background-color: #2a5178; /* Darken the color on hover */
+    }
+
+/* Edit Button */
+.edit-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 3px 8px;
+    margin-right: 5px; /* Add space between the buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+}
+
+    .edit-btn:hover {
+        background-color: #136e35; /* Darken the color on hover */
+    }
+
+/* Delete Button */
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+}
+
+    .delete-btn:hover {
+        background-color: #a41d1d; /* Darken the color on hover */
+    }
+
+
+#datatableid {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    align-items: center;
+    padding: 15px 30px 15px 15px;
+
+}
+
+    #datatableid th, #datatableid td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: center;
+        background-color: #f0f0f0; /* Light background color for header cells */
+        padding: 15px 30px 15px 15px;
+    }
+
+    #datatableid th {
+      color:#fff;
+    }
+
+    #datatableid tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+
+    }
+
+    #datatableid tbody tr:hover {
+        background-color: #e0e0e0;
+    }
+
+
+#datatableid .mdc-data-table__header-row {
+    background-color: #a19f9f;
+    width: 300px;
+    padding: 15px 35px 15px 15px;
+}
+/* Card */
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    padding: 5px 10px;
+    margin-top: 30px;
+    left: 12%;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+  
+}
+
+.card-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Row and Columns */
+.row {
+    margin: 0;
+}
+
+.col-lg-10, .col-md-10, .col-sm-8, .col-xs-6 {
+    padding: 5px;
+}
+
+
+
+.title-container {
+    grid-area: main;
+    overflow-y: auto;
+
+  padding-top: 15px;
+
+}
+
+.main-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .main-title > p {
+        font-size: 20px;
+    }
+
+
+/* Style the submenu */
+.sidebar .submenu {
+    padding: 5px 5px 10px 50px;
+    margin-top: -10px;
+    display: none;
+}
+
+    /* Style the submenu list items */
+    .sidebar .submenu li {
+        display: block;
+    }
+
+    /* Style the submenu links */
+    .sidebar .submenu a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+    }
+
+/* Show the submenu on hover */
+.sidebar li:hover .submenu {
+    display: block;
+}
+
+/* Style the active menu item */
+.sidebar li.active a {
+    font-weight: bold;
+}
+
+/* Style the active submenu items if needed */
+.sidebar .submenu li.active a {
+    font-weight: normal;
+}
+
+
+/* Style the submenu list items */
+.sidebar .submenu li {
+    padding: 5px;
+    text-align: left;
+}
+
+/* Style the submenu links */
+.sidebar .submenu a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+#datatableid .mdc-data-table__header-cell {
+   
+    background-color: #f0f0f0; /* Light background color for header cells */
+}
+
+#datatableid .mdc-data-table__cell {
+ 
+    text-align: center; /* Center-align the text */
+    border: 1px solid #ccc; /* Add a border for separation */
+}
+
+#datatableid .mdc-data-table__header-row {
+    background-color: #3498db;
+}
+.card:nth-child(3) {
+    border-left: 7px solid #0000FF;
+}
+#report-choice {
+    /* Your existing styles for the button */
+    margin-right: 10px;
+ 
+    cursor: pointer; /* Cursor style on hover */
+
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+   
+
+
+    height: 40px; /* Increase the height */
+    position: relative;
+    font-size: 13px; /* Adjust the font size as needed */
+}
